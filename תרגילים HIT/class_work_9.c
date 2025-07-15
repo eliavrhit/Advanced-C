@@ -121,7 +121,7 @@ void scanString(char* str, int* smallDigits, int* bigDigits, int* number, int* s
 }
 */
 
-/*ex3*/
+/*ex3
 
 void removeSpaces(char* str);
 
@@ -166,3 +166,4 @@ void removeSpaces(char* str) {
     }
     *write = '\0';
 }
+*/
