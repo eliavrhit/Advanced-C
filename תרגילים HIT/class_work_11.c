@@ -6,14 +6,14 @@ void removeSpaces (char* infile, char* outfile);
 int main() {
 
     int numLines = 0;
-    numLines=countLines("input.txt");
+    numLines=countLines("Files/class_work_11_files/input.txt");
     printf("The number of lines is %d", numLines);
 
     int counts[26] = {0};
-    letterFrequency("input.txt", counts);
+    letterFrequency("Files/class_work_11_files/input.txt", counts);
 
-    char* infile = "infile.txt";
-    char* outfile = "outfile.txt";
+    char* infile = "Files/class_work_11_files/infile.txt";
+    char* outfile = "Files/class_work_11_files/outfile.txt";
     removeSpaces(infile, outfile);
 
     return 0;
