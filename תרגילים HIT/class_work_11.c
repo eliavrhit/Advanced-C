@@ -7,7 +7,7 @@ int main() {
 
     int numLines = 0;
     numLines=countLines("Files/class_work_11_files/input.txt");
-    printf("The number of lines is %d", numLines);
+    printf("The number of lines is %d\n", numLines);
 
     int counts[26] = {0};
     letterFrequency("Files/class_work_11_files/input.txt", counts);
@@ -25,12 +25,16 @@ int countLines (char* filename) {
     if (file == NULL) {
         return 0;
     }
-    char c;
+    char c, lastChar = '\0';
     int numLines = 0;
     while (fscanf(file, "%c", &c) == 1) {
         if (c == '\n') {
             numLines++;
         }
+        lastChar = c;
+    }
+    if (lastChar != '\n' && lastChar != '\0') {
+        numLines++;
     }
     fclose(file);
     return numLines;
