@@ -83,6 +83,7 @@ void removeSpaces (char* infile, char* outfile)
             fprintf(out, "%c", c);
         }
     }
+    fprintf(out, "%s", " test"); // תוספת שלי
     fclose(in);
     fclose(out);
 
