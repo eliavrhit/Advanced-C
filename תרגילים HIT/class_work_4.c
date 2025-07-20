@@ -84,11 +84,11 @@ typedef struct student
     char name[30];
     int id_card;
     double grade;
-} student;
+} Student;
 int calculate(student students[4], double *avarage);
 
 int main() {
-    student students[4] = {
+    Student students[4] = {
     {"Eliav", 206646929, 95},
     {"Yoni", 206646930, 90},
     {"Moshe", 206646931, 85},
@@ -100,7 +100,7 @@ int main() {
     return 0;
 }
 
-int calculate(student students[4], double *avarage) {
+int calculate(Student students[4], double *avarage) {
 
     *avarage = 0;
     int count = 0;
