@@ -82,7 +82,7 @@ item* insertFirst(item *head, int data) {
 }*/
 
 
-/*ex2*/
+/*ex2
 
 int countCharsAndWords(char* file_name, int* words);
 int flipFile(char* file_name);
@@ -168,4 +168,18 @@ int flipFile(char* file_name) {
 
     fclose(swap);
     return words;
-}
+}*/
+
+
+/*ex4*/
+
+// תשובה ב
+
+
+/*ex5*/
+
+// תשובה ד
+
+
+/*ex6*/
+
